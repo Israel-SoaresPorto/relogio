@@ -1,0 +1,37 @@
+body {
+    background: linear-gradient(lightgreen, lightyellow, lightblue);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.central {
+    background-color: white;
+    border: 1px solid black;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    border-radius: 20px;
+    width: 600px;
+}
+
+.central div {
+    width: 200px;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.219);
+}
+
+.central p {
+    font-size: 50px;
+}
