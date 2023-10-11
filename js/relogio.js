@@ -5,11 +5,14 @@ const segundo = document.querySelector("#segundo")
 const dia = document.querySelector("#dia")
 const mes = document.querySelector("#mes")
 const ano = document.querySelector("#ano")
+const diaDaSemana = document.querySelector("#diaSemana")
 
 var data = new Date()
 let d = data.getDate()
 let m = data.getMonth() + 1
 let a = data.getFullYear()
+
+var diasDasSemana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sabado"]
 
 if(d < 10){
     d = '0' + d
@@ -19,6 +22,7 @@ if (m < 10) {
     m = '0' + m
 }
 
+diaDaSemana.textContent = diasDasSemana[data.getDay()]
 dia.textContent = d
 mes.textContent = m
 ano.textContent = a
