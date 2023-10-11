@@ -2,6 +2,26 @@
 const hora = document.querySelector("#hora")
 const minuto = document.querySelector("#minuto")
 const segundo = document.querySelector("#segundo")
+const dia = document.querySelector("#dia")
+const mes = document.querySelector("#mes")
+const ano = document.querySelector("#ano")
+
+var data = new Date()
+let d = data.getDate()
+let m = data.getMonth() + 1
+let a = data.getFullYear()
+
+if(d < 10){
+    d = '0' + d
+}
+
+if (m < 10) {
+    m = '0' + m
+}
+
+dia.textContent = d
+mes.textContent = m
+ano.textContent = a
 
 //Evento
 setInterval(relogio, 1000)
@@ -28,6 +48,10 @@ function relogio () {
     hora.textContent = hr
     minuto.textContent = min
     segundo.textContent = seg
+}
+
+function calendario() {
+    let data 
 }
 
 
