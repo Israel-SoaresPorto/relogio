@@ -1,11 +1,12 @@
 body {
-    background: linear-gradient(lightgreen, lightyellow, lightblue);
+    background: linear-gradient(rgb(40, 231, 2), rgb(6, 226, 171), rgb(224, 228, 5), orange);
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 .central {
     padding: 20px;
@@ -14,27 +15,36 @@ body {
     justify-content: center;
     flex-direction: column;
     border-radius: 20px;
-    width: 600px;
-    height: 500px;
     color: black;
 }
 
+.periodo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.periodo img {
+    width: 150px;
+}
+
+.periodo p {
+    font-size: 30px;
+}
+
 .data {
-    background-color: rgba(0, 0, 0, 0.308);
-    border: 2px solid white;
-    border-radius: 20px;
     padding: 20px;
-    margin: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 10px;
     height: 50px;
 }
 
 .data p {
-    font-size: 40px;
+    font-size: 30px;
+    text-indent: 9px;
 }
 
 .horario {
@@ -48,9 +58,19 @@ body {
     gap: 20px;
     padding: 20px;
     width: 500px;
-    height: 200px;
+    height: 100px;
 }
 
 .horario p {
     font-size: 80px;
+}
+
+.fundo-dia {
+    background: linear-gradient(rgb(40, 231, 2), rgb(6, 226, 171), rgb(224, 228, 5), orange);
+}
+.fundo-tarde {
+    background: linear-gradient(rgb(248, 80, 2), rgb(226, 138, 6), rgb(224, 228, 5), rgb(214, 228, 92));
+}
+.fundo-noite {
+    background: linear-gradient(rgb(4, 12, 85), rgb(6, 38, 177), rgb(109, 5, 228), rgb(24, 23, 23));
 }
