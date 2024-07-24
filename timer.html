@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/timer.css">
+    <title>Relógio</title>
+  </head>
+  <body data-cor-fundo="">
+    <nav class="navbar">
+      <a class="navbar_link" href="index.html">Relógio</a>
+      <a class="navbar_link" href="timer.html">Timer</a>
+    </nav>
+    <main class="container">
+      <div class="definir-timer">
+        <p>Definir Tempo</p>
+        <div class="definir-timer_inputs">
+          <div class="definir-timer_input">
+            <input type="number" id="input-horas" min="0" max="99" step="00">
+            <p class="definir-timer_text">h</p>
+          </div>
+          <div class="definir-timer_input">
+            <input type="number" id="input-minutos" min="0" max="60" step="00">
+            <p class="definir-timer_text">m</p>
+          </div>
+          <div class="definir-timer_input">
+            <input type="number" id="input-segundos" min="0" max="60" step="00">
+            <p class="definir-timer_text">s</p>
+          </div>
+        </div>
+      </div>
+      <div class="timer-acoes">
+        <button id="iniciar">Iniciar</button>
+        <button id="pausar" disabled>Pausar</button>
+        <button id="parar" disabled>Parar</button>
+      </div>
+      <div class="relogio">
+        <div>
+          <p id="hora">00</p>
+        </div>
+        <p>:</p>
+        <div>
+          <p id="minuto">00</p>
+        </div>
+        <p>:</p>
+        <div>
+          <p id="segundo">00</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/fundo.js"></script>
+    <script src="js/timer.js"></script>
+  </body>
+</html>

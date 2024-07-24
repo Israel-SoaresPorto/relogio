@@ -1,0 +1,53 @@
+.definir-timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.definir-timer_inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.definir-timer_input {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.definir-timer_input input {
+    background-color: rgba(0, 0, 0, 0.200);
+    font-size: 1em;
+    padding: 0.25em;
+    border: 2px solid rgb(243, 247, 6);
+    outline: none;
+    border-radius: 0.5rem;
+}
+
+[data-cor-fundo="noite"] .definir-timer_input input {
+    border: 2px solid rgb(161, 154, 154);
+}
+
+.timer-acoes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+} 
+
+.timer-acoes button {
+    font-size: 0.625em;
+    background-color: orangered;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    cursor: pointer;
+}
+
+[data-cor-fundo="noite"] .timer-acoes button {
+    background-color: rgb(109, 5, 228);
+}
