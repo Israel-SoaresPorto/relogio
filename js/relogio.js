@@ -12,13 +12,9 @@ const fundo = document.body
 
 let data = new Date()
 let diasDasSemana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sabado"]
-let d = data.getDate()
+let d = data.getDate() < 10 ? '0' + data.getDate() : data.getDate();
 let meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
 let a = data.getFullYear()
-
-if(d < 10){
-    d = '0' + d
-}
 
 diaDaSemana.textContent = diasDasSemana[data.getDay()]
 dia.textContent = d
@@ -26,14 +22,11 @@ mes.textContent = meses[data.getMonth()]
 ano.textContent = a
 
 //Evento
-setInterval(relogio, 1000)
-
-//Função
-function relogio () {
+setInterval(() => {
     let horario = new Date()
-    let hr = horario.getHours()
-    let min = horario.getMinutes()
-    let seg = horario.getSeconds()
+    let hr = horario.getHours() < 10 ? '0' + horario.getHours() : horario.getHours();
+    let min = horario.getMinutes() < 10 ? '0' + horario.getMinutes() : horario.getMinutes();
+    let seg = horario.getSeconds() < 10 ? '0' + horario.getSeconds() : horario.getSeconds();
 
     if(hr >= 5 && hr < 12) {
         periodo.textContent = "Bom dia!"
@@ -48,25 +41,8 @@ function relogio () {
         icone.src = "images/moon.png"
         fundo.classList.add("fundo-noite")
     }
-
-    if(hr < 10) {
-        hr = '0' + hr
-    }
-
-    if(min < 10) {
-        min = '0' + min
-    }
-
-    if(seg < 10) {
-        seg = '0' + seg
-    }
     
     hora.textContent = hr
     minuto.textContent = min
     segundo.textContent = seg
-}
-
-
-
-
-
+}, 1000);
