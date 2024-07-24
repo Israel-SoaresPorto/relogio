@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/relogio.css">
     <title>Relógio</title>
   </head>
-  <body>
-    <div class="container">
+  <body data-cor-fundo="">
+    <nav class="navbar">
+      <a class="navbar_link" href="index.hmtl">Relógio</a>
+      <a class="navbar_link" href="timer.hmtl">Timer</a>
+    </nav>
+    <main class="container">
       <div class="periodo">
         <img src="" alt="icone de periodo" id="icone">
         <p id="periodo">text</p>
@@ -21,7 +26,7 @@
         <p> de </p>
         <p id="ano">00</p>
       </div>
-      <div class="horario">
+      <div class="relogio">
         <div>
           <p id="hora">00</p>
         </div>
@@ -34,7 +39,7 @@
           <p id="segundo">00</p>
         </div>
       </div>
-    </div>
+    </main>
     <script src="js/relogio.js"></script>
   </body>
 </html>

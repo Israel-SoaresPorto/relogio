@@ -1,0 +1,27 @@
+.periodo {
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.periodo img {
+    width: 4em;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.data p {
+    text-indent: 0.25em;
+}
+
+.data p:nth-child(2) {
+    text-indent: 0.1em;
+}

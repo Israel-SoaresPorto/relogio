@@ -21,7 +21,6 @@ dia.textContent = d
 mes.textContent = meses[data.getMonth()]
 ano.textContent = a
 
-//Evento
 setInterval(() => {
     let horario = new Date()
     let hr = horario.getHours() < 10 ? '0' + horario.getHours() : horario.getHours();
@@ -31,15 +30,15 @@ setInterval(() => {
     if(hr >= 5 && hr < 12) {
         periodo.textContent = "Bom dia!"
         icone.src = "images/sun.png"
-        fundo.classList.add("fundo-dia")
+        fundo.setAttribute('data-cor-fundo', 'dia')
     } else if(hr >= 12 && hr < 18) {
         periodo.textContent = "Boa tarde!"
         icone.src = "images/sun.png"
-        fundo.classList.add("fundo-tarde")
+        fundo.setAttribute('data-cor-fundo', 'tarde')
     } else {
         periodo.textContent = "Boa noite!"
         icone.src = "images/moon.png"
-        fundo.classList.add("fundo-noite")
+        fundo.setAttribute('data-cor-fundo', 'noite')
     }
     
     hora.textContent = hr
